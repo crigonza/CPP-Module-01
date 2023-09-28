@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 20:27:25 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/13 19:11:20 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/09/28 12:24:33 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,28 @@ void    Harl::complain(std::string level)
 
     while(i < 4 && levels[i].compare(level) != 0)
         i++;
-    (this->*ptrs[i])();
+    switch (i)
+    {
+        case 0:
+            std::cout << "[ DEBUG ]" << std::endl;
+            (this->*ptrs[i++])();
+            std::cout << std::endl;
+        case 1:
+            std::cout << "[ INFO ]" << std::endl;
+            (this->*ptrs[i++])();
+            std::cout << std::endl;
+        case 2:
+            std::cout << "[ WARNING ]" << std::endl;
+            (this->*ptrs[i++])();
+            std::cout << std::endl;
+        case 3:
+            std::cout << "[ ERROR ]" << std::endl;
+            (this->*ptrs[i++])();
+            std::cout << std::endl;
+        break;
+    default:
+        std::cout << "[ Probably complaining about insignificant problems ]";
+        std::cout << std::endl;
+        break;
+    }
 }

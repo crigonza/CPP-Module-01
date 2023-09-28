@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 18:03:27 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/11 19:17:46 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/09/28 09:44:30 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class   Zombie
 {
     private:
-        std::string _name;
+        std::string     _name;
     public:
         Zombie(std::string name);
         ~Zombie(void);

@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 20:24:42 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/13 18:20:39 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/09/28 11:55:35 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #define HARL_H
 
-class Harl
+class   Harl
 {
     private:
         void    debug(void);
